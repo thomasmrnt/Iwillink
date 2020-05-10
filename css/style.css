@@ -1,0 +1,231 @@
+body.home{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background:-webkit-radial-gradient(#376888, #2d5772, #1c3545);
+   background:radial-gradient(#d7ede1, #9ac2d5, #2d5772);
+}
+
+body.other{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background:-webkit-radial-gradient(#376888, #2d5772, #1c3545);
+   background:radial-gradient(#5f93ac, #5f93ac, #5f93ac);
+}
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+  color: white
+}
+
+.earth {
+  width:200px;
+  height:200px;
+  background-image:url( https://raw.githubusercontent.com/cartalan/TierraGirando/master/img/mapa.png);
+  background-size:cover;
+  border-radius:50%;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+  box-shadow:-30px -20px 0 0 rgba(0,0,0,.15) inset, -70px -30px 0 0 rgba(0,0,0,.1) inset, 5px 5px 0 0 rgba(255,255,255,.2) inset;
+  -webkit-animation:rotationEarth 5s infinite linear;
+  -moz-animation:rotationEarth 5s infinite linear;
+  animation:rotationEarth 5s infinite linear;
+}
+
+@-webkit-keyframes rotationEarth {
+ from {
+     background-position:left center;
+ }
+ to {
+     background-position: -300px center;
+ }
+}
+
+@keyframes rotationEarth {
+ from {
+     background-position:left center;
+ }
+ to {
+     background-position: -396px center;
+ }
+}
+
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:-webkit-radial-gradient(#376888, #2d5772, #1c3545);
+   background:radial-gradient(#376888, #2d5772, #1c3545);
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:-webkit-radial-gradient(#376888, #2d5772, #1c3545);
+  background:radial-gradient(#376888, #2d5772, #1c3545);
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  text-align:center;
+  color:#ffffff;
+}
+
+
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+
+/* Boxes ********************************/
+
+
+/* Boxes ********************************/
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  margin-bottom:5px;
+  
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background:-webkit-radial-gradient(#376888, #2d5772, #1c3545);
+  background:radial-gradient(#376888, #2d5772, #1c3545);
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
