@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Affordable and professional web design">
 	  <meta name="keywords" content="web design, affordable web design, professional web design">
-    <meta name="author" content="Brad Traversy">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script defer src="script.js"></script>
     <title>Iwillink | Welcome</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="home">
+    
     <header>
+      
       <div class="container">
         <div id="branding">
           <h1><span class="highlight">Iwil</span>link</h1>
@@ -27,13 +30,25 @@
         </nav>
       </div>
     </header>
+    <button data-modal-target="#modal">Click on me!</button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Because everybody worth it!</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Here you are free to post and promote whatever you want for free!!
+        Check the about section for more information.
+      </div>
+    </div>
+    <div id="overlay"></div>
+    
     
     <section id="showcase">
       <div class="earth">
       </div>
     </section>
-
-  
+    
     <section id="boxes">
       <div class="container">
         <div class="box">
